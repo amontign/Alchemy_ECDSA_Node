@@ -19,9 +19,6 @@ app.get("/balance/:address", (req, res) => {
 });
 
 app.post("/send", (req, res) => {
-  /*get the signature from client side, change it into the public address, then replace sender by this one*/
-
-
   const { sender, recipient, amount } = req.body;
 
   setInitialBalance(sender);
