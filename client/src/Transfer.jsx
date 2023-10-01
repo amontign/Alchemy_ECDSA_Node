@@ -3,7 +3,6 @@ import server from "./server";
 import { keccak256 } from 'ethereum-cryptography/keccak';
 import { secp256k1 } from "ethereum-cryptography/secp256k1";
 import { utf8ToBytes } from "ethereum-cryptography/utils";
-import { toHex } from "ethereum-cryptography/utils";
 
 function Transfer({ privateKey, setBalance, address }) {
   const [sendAmount, setSendAmount] = useState("");
